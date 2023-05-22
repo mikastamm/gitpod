@@ -38,7 +38,7 @@ if [ -d ${GITPOD_REPO_ROOT}/${reponame} ]; then
   ddev stop -a
   ddev start -y
   gunzip /tmp/weinert-industries.com-artifacts/db.sql.gz && sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_general_ci/g' /tmp/weinert-industries.com-artifacts/db.sql && gzip /tmp/weinert-industries.com-artifacts/db.sql
-  source $GITPOD_REPO_ROOT/weinert-industries.com/.gitpod/setup_wordpress.sh
+  source $GITPOD_REPO_ROOT/.gitpod/setup_wordpress.sh
   if [ -d "/tmp/${DDEV_ARTIFACTS##*/}" ]; then
     if [ -f "/tmp/${DDEV_ARTIFACTS##*/}/db.sql.gz" ]; then
       ddev import-db --src=/tmp/${DDEV_ARTIFACTS##*/}/db.sql.gz
