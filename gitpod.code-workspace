@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "weinert-industries.com/web/app/plugins/weinert-plugin"
+		},
+		{
+			"path": "weinert-industries.com/web/app/themes/astra-wn-child"
+		}
+	],
+	"settings": {}
+}
